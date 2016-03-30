@@ -10,7 +10,7 @@ module Uploadcare::Rails::ActionView
 
       v = settings[:version]
       m = settings[:min] ? ".min" : ""
-      url = "http://ucarecdn.com/widget/#{v}/uploadcare/uploadcare-#{v}#{m}.js"
+      url = "http://ucarecdn.com/widget/#{v}/uploadcare/uploadcare.js"
 
       javascript_include_tag(url)
     end
